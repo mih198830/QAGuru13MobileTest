@@ -1,6 +1,8 @@
 package drivers;
 
 import com.codeborne.selenide.WebDriverProvider;
+import config.CredentialsConfig;
+import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.WebDriver;
@@ -12,22 +14,20 @@ import java.net.URL;
 
 public class BrowserstackMobileDriver implements WebDriverProvider {
 
+    static CredentialsConfig config = ConfigFactory.create(CredentialsConfig.class);
     @Override
     public WebDriver createDriver(Capabilities capabilities) {
         MutableCapabilities mutableCapabilities = new MutableCapabilities();
         mutableCapabilities.merge(capabilities);
 
-        mutableCapabilities.setCapability("browserstack.user", "mikhailmatskevic_HmegfA");
-        mutableCapabilities.setCapability("browserstack.key", "iLisHptret3fzx3qXwPj");
+        mutableCapabilities.setCapability("browserstack.user", config.user());
+        mutableCapabilities.setCapability("browserstack.key", config.key());
 
-        // Set URL of the application under test
-        mutableCapabilities.setCapability("app", "bs://879b32b507283f21272b4f35faec57d066d2071c");
+        mutableCapabilities.setCapability("app", config.appUrl());
 
-        // Specify device and os_version for testing
         mutableCapabilities.setCapability("device", "Samsung Galaxy S22 Ultra");
         mutableCapabilities.setCapability("os_version", "12.0");
 
-        // Set other BrowserStack capabilities
         mutableCapabilities.setCapability("project", "First Java Project");
         mutableCapabilities.setCapability("build", "browserstack-build-1");
         mutableCapabilities.setCapability("name", "first_test");
@@ -36,7 +36,7 @@ public class BrowserstackMobileDriver implements WebDriverProvider {
     }
         public static URL getBrowserStackURL() {
             try {
-                return new URL("http://hub.browserstack.com/wd/hub");
+                return new URL(config.browserstackUrl());
             } catch (MalformedURLException e) {
                 throw new RuntimeException(e);
             }
