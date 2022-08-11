@@ -2,10 +2,8 @@ package tests;
 
 import com.codeborne.selenide.Condition;
 import io.appium.java_client.AppiumBy;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 

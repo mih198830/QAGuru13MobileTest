@@ -9,7 +9,7 @@ import static java.lang.String.format;
 public class Browserstack {
     static CredentialsConfig config = ConfigFactory.create(CredentialsConfig.class);
     public static String videoUrl(String sessionId) {
-        String url = format("https://api.browserstack.com/app-automate/sessions/%s.json", sessionId);
+        String url = format(config.url(), sessionId);
 
         return given()
                 .auth().basic(config.user(), config.key())

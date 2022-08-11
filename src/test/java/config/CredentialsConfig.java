@@ -8,4 +8,5 @@ public interface CredentialsConfig extends Config {
     String key();
     String browserstackUrl();
     String appUrl();
+    String url();
 }
