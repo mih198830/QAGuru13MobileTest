@@ -6,4 +6,7 @@ import org.aeonbits.owner.Config;
 public interface AndroidConfig extends Config {
     @Key("device.name")
     String getGetDeviceName();
+
+    @Key("device.os")
+    String getOSVersion();
 }
