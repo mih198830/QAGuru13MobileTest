@@ -19,12 +19,9 @@ public class BrowserstackMobileDriver implements WebDriverProvider {
     public WebDriver createDriver(Capabilities capabilities) {
         MutableCapabilities mutableCapabilities = new MutableCapabilities();
         mutableCapabilities.merge(capabilities);
-
         mutableCapabilities.setCapability("browserstack.user", config.user());
         mutableCapabilities.setCapability("browserstack.key", config.key());
-
         mutableCapabilities.setCapability("app", config.appUrl());
-
         mutableCapabilities.setCapability("device", "Samsung Galaxy S22 Ultra");
         mutableCapabilities.setCapability("os_version", "12.0");
 
