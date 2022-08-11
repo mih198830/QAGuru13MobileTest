@@ -22,7 +22,7 @@ public class BrowserstackMobileDriver implements WebDriverProvider {
         mutableCapabilities.setCapability("browserstack.user", config.user());
         mutableCapabilities.setCapability("browserstack.key", config.key());
         mutableCapabilities.setCapability("app", config.appUrl());
-        mutableCapabilities.setCapability("device", "Samsung Galaxy S22 Ultra");
+        mutableCapabilities.setCapability("device", "Samsung Galaxy Tab S8");
         mutableCapabilities.setCapability("os_version", "12.0");
 
         mutableCapabilities.setCapability("project", "First Java Project");
@@ -39,3 +39,4 @@ public class BrowserstackMobileDriver implements WebDriverProvider {
             }
         }
 }
+    //gradle clean android -Dos_version=11.0
