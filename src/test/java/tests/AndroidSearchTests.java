@@ -13,7 +13,9 @@ public class AndroidSearchTests extends TestBase {
     @Test
     @Tag("android")
     void settingMenuAvailable() {
-        back();
+        step("Technical step to get rid of start menu", () -> {
+            back();
+        });
 
         step("Click More icon", () -> {
             $(AppiumBy.id("org.wikipedia.alpha:id/menu_icon"))
