@@ -1,6 +1,7 @@
 package drivers;
 
 import com.codeborne.selenide.WebDriverProvider;
+import config.AndroidConfig;
 import config.CredentialsConfig;
 import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.Capabilities;
@@ -15,6 +16,7 @@ import java.net.URL;
 public class BrowserstackMobileDriver implements WebDriverProvider {
 
     static CredentialsConfig config = ConfigFactory.create(CredentialsConfig.class);
+    static AndroidConfig phoneConfig = ConfigFactory.create(AndroidConfig.class);
     @Override
     public WebDriver createDriver(Capabilities capabilities) {
         MutableCapabilities mutableCapabilities = new MutableCapabilities();
@@ -22,7 +24,7 @@ public class BrowserstackMobileDriver implements WebDriverProvider {
         mutableCapabilities.setCapability("browserstack.user", config.user());
         mutableCapabilities.setCapability("browserstack.key", config.key());
         mutableCapabilities.setCapability("app", config.appUrl());
-        mutableCapabilities.setCapability("device", "Samsung Galaxy Tab S8");
+        mutableCapabilities.setCapability("device", phoneConfig.getGetDeviceName());
         mutableCapabilities.setCapability("os_version", "12.0");
 
         mutableCapabilities.setCapability("project", "First Java Project");
