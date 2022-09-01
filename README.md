@@ -15,10 +15,9 @@
 <a href="https://web.telegram.org/"><img width="50" height="50"  alt="Telegram" src="images\Telegram.svg"></a>
 </p>
 
-## List of checks:
+## Check:
 
-- Test on checking four onboarding steps
-- Test on checking the work of the search bar 
+- Test that setting menu is available in app
 
 ## Jenkins job
 Jenkins is an automation server which lets us run tests
