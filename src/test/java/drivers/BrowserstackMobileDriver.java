@@ -41,4 +41,3 @@ public class BrowserstackMobileDriver implements WebDriverProvider {
             }
         }
 }
-    //gradle clean android -Dos_version=11.0
