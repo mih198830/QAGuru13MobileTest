@@ -36,7 +36,9 @@ Click <a target="_blank" href="https://jenkins.autotests.cloud/job/BrowserstackM
 Here are the graphs:
 
 <p align="center">
-![2022-09-01_20h59_55](https://user-images.githubusercontent.com/61227126/187970945-f9cfb2d7-1e45-4c91-a2ac-f13f9ccc3d79.png)
+  
+![2022-09-01_20h59_55](https://user-images.githubusercontent.com/61227126/187971055-3ab61d7f-85f5-405d-9a3f-5be0a36c8d52.png)
+
 </p>
 
 ## Telegram notifications
