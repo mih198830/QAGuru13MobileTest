@@ -22,10 +22,10 @@
 ## Jenkins job
 Jenkins is an automation server which lets us run tests
 
-Click <a target="_blank" href="https://jenkins.autotests.cloud/job/10-anastasiachemko-project-wildberries">here</a> to see the job for Wikipedia app.
+Click <a target="_blank" href="https://jenkins.autotests.cloud/job/BrowserstackMobileTests/">here</a> to see the job for Wikipedia app.
 
 <p align="center">
-<img title="Jenkins job" src="images/screens/jenkinsJob.png">
+<img title="Jenkins job" src="images/JenkinsJob.svg">
 </p>
 
 ## Allure report
