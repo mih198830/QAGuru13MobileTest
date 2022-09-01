@@ -25,7 +25,7 @@ Jenkins is an automation server which lets us run tests
 Click <a target="_blank" href="https://jenkins.autotests.cloud/job/BrowserstackMobileTests/">here</a> to see the job for Wikipedia app.
 
 <p align="center">
-<img title="Jenkins job" src="images/Jenkins.svg">
+<img title="Jenkins job" src="images/Jenkins.svg" width="50" height="50">
 </p>
 
 ## Allure report
