@@ -31,12 +31,12 @@ Click <a target="_blank" href="https://jenkins.autotests.cloud/job/BrowserstackM
 ## Allure report
 Allure Framework is a flexible test report tool that shows a concise representation of what have been tested in a neat web report form
 
-Click <a target="_blank" href="https://jenkins.autotests.cloud/job/10-anastasiachemko-project-wikipedia-mobileTests/7/allure/">here</a> to see the report of the tests
+Click <a target="_blank" href="https://jenkins.autotests.cloud/job/BrowserstackMobileTests/20/allure/">here</a> to see the report of the tests
 
 Here are the graphs:
 
 <p align="center">
-<img title="Allure overview" src="images/screens/graph.png">
+![2022-09-01_20h57_42](https://user-images.githubusercontent.com/61227126/187970559-b3121f1b-6bc2-4f97-9a17-935e96c25624.png)
 </p>
 
 ## Telegram notifications
