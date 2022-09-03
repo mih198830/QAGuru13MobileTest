@@ -41,14 +41,10 @@ Here are the graphs:
 
 </p>
 
-## Telegram notifications
-Notifications of test results are sent to Telegram:
-
-<p align="center">
-<img title="Allure overview" src="images/screens/tgNotification.png">
-</p>
 
 ## Video example of a running test
 
-<img src="images/gif/runningTest.gif">
+https://user-images.githubusercontent.com/61227126/188277952-e753c10b-6422-4e36-9903-f688a9dc26cb.mp4
+
+
 
