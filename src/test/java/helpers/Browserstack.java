@@ -8,6 +8,7 @@ import static java.lang.String.format;
 
 public class Browserstack {
     static CredentialsConfig config = ConfigFactory.create(CredentialsConfig.class);
+
     public static String videoUrl(String sessionId) {
         String url = format(config.url(), sessionId);
 

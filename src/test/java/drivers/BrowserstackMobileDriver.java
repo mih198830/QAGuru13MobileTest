@@ -17,6 +17,7 @@ public class BrowserstackMobileDriver implements WebDriverProvider {
 
     static CredentialsConfig config = ConfigFactory.create(CredentialsConfig.class);
     static AndroidConfig phoneConfig = ConfigFactory.create(AndroidConfig.class);
+
     @Override
     public WebDriver createDriver(Capabilities capabilities) {
         MutableCapabilities mutableCapabilities = new MutableCapabilities();
@@ -33,11 +34,12 @@ public class BrowserstackMobileDriver implements WebDriverProvider {
 
         return new RemoteWebDriver(getBrowserStackURL(), mutableCapabilities);
     }
-        public static URL getBrowserStackURL() {
-            try {
-                return new URL(config.browserstackUrl());
-            } catch (MalformedURLException e) {
-                throw new RuntimeException(e);
-            }
+
+    public static URL getBrowserStackURL() {
+        try {
+            return new URL(config.browserstackUrl());
+        } catch (MalformedURLException e) {
+            throw new RuntimeException(e);
         }
+    }
 }
