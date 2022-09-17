@@ -13,23 +13,23 @@ public class AndroidSettingTests extends TestBase {
     @Test
     @Tag("android")
     void settingMenuAvailable() {
-        step("Technical step to get rid of start menu", () -> {
-            back();
-        });
+        step("Technical step to get rid of start menu", () ->
+            back()
+        );
 
-        step("Click More icon", () -> {
+        step("Click More icon", () ->
             $(AppiumBy.id("org.wikipedia.alpha:id/menu_icon"))
-                    .click();
-        });
+                    .click()
+        );
 
-        step("Click Setting menu", () -> {
+        step("Click Setting menu", () ->
             $(AppiumBy.id("org.wikipedia.alpha:id/main_drawer_settings_container"))
-                    .click();
-        });
+                    .click()
+        );
 
-        step("Setting menu Opened", () -> {
+        step("Setting menu Opened", () ->
             $(AppiumBy.id("android:id/title"))
-                    .shouldHave(Condition.text("General"));
-        });
+                    .shouldHave(Condition.text("General"))
+        );
     }
 }
